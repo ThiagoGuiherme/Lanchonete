@@ -1,0 +1,9 @@
+SELECT setval('estado_pedido_id_seq', coalesce(max(id),0) + 1, false) FROM estado_pedido;
+SELECT setval('lista_id_seq', coalesce(max(id),0) + 1, false) FROM lista;
+SELECT setval('mesas_id_seq', coalesce(max(id),0) + 1, false) FROM mesas;
+SELECT setval('pedido_id_seq', coalesce(max(id),0) + 1, false) FROM pedido;
+SELECT setval('pedido_item_id_seq', coalesce(max(id),0) + 1, false) FROM pedido_item;
+SELECT setval('produto_id_seq', coalesce(max(id),0) + 1, false) FROM produto;
+SELECT setval('qunatidade_id_seq', coalesce(max(id),0) + 1, false) FROM qunatidade;
+SELECT setval('tarefa_id_seq', coalesce(max(id),0) + 1, false) FROM tarefa;
+SELECT setval('tipo_produto_id_seq', coalesce(max(id),0) + 1, false) FROM tipo_produto;
